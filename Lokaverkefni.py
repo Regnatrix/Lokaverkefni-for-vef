@@ -23,26 +23,24 @@ def nyskraningarsida():
 
 @post("/nyskraning")
 def nyskraning():
-    u = request.forms.get('user')
-    p = request.forms.get('pass')
-    connection = pymysql.connect (host='tsuts.tskoli.is',
-                                  port=3306, user='1105922489',
-                                  passwd='mypassword',
-                                  db='1105922489_lokaverkefniveffor')
+    connection = pymysql.connect (host='tsuts.tskoli.is', port=3306, user='1105922489', passwd='mypassword', db='1105922489_lokaverkefniveffor')
 
-    cur = connection.cursor()
-    cur.execute ("SELECT count(*) FROM user where user=%s",(u))
-    result = cursor.fetchone()
+    username = (request.forms.get("username"))
+    password = (request.forms.get("password"))
 
-    print(result)
 
-    if result[0] == 0:
-        cur.execute ("INSERT INTO user Values(%s,%s)",(u, p))
-        connection.commit ()
-        cur.close ()
-        return u, "Notandi hefur verið stofnaður!"
-    else:
-        return u, "Notandi er nú þegar til"
+    with connection.cursor () as cursor:
+        sql = "SELECT user, pass FROM user WHERE user = '" + username + "'"
+        cursor.execute ( sql )
+        result = cursor.fetchone ()
+        if result:
+            uttak = "Notandi er nú þegar til"
+        else:
+            sql = "INSERT INTO user (user, pass) VALUES ('" + username + "', '" + password + "')"
+            cursor.execute ( sql )
+            connection.commit ()
+            uttak = "Notandi hefur verið stofnaður!"
+    connection.close ()
 
     return template ( "leynisida.tpl", uttak=uttak )
 
@@ -108,8 +106,8 @@ def wowsolusida():
     return template("wowsolusida.tpl", products=vorulisti)
 
 #karfa fyrir solusiduna
-@route("/wowcart")
-def wowcart():
+@route("/cart")
+def cart():
     session = bottle.request.environ.get('beaker.session')
     karfa = []
 
@@ -142,9 +140,8 @@ def wowcart():
     return template("wowcart.tpl", karfa = karfa)
 
 #til að bæta vorum í cart
-@route("/wowcart/add/<id:int>")
-
-def add_to_wowcart(id):
+@route("/cart/add/<id:int>")
+def add_to_cart(id):
     if id == 1:
         session =  bottle.request.environ.get("beaker.sessions")
         session["1"] = "Amalgam of Destruction"
