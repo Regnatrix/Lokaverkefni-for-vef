@@ -5,7 +5,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
 <body>
-<form method='post' action="/nyskraning" method="post">
+<form method='post' action="/nyskraning" accept-charset="ISO-8859-1">
 	<fieldset>
 	<legend><h2>Nýskráning</h2></legend>
 	<input type="text" name="username" placeholder="Username" required><br>
