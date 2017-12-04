@@ -87,9 +87,6 @@ def twitch():
 def youtube():
     return template("youtube.tpl")
 
-@route("/ummig")
-def ummig():
-    return template("ummig.tpl")
 
 #WoW Sölusíðu vörulisti
 vorulisti = [{"pid": 1, "name": "Amalgam of Destruction", "price": 15000},
