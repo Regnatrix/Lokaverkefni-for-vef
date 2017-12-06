@@ -83,10 +83,21 @@ def utskraning():
 def twitch():
     return template("twitch.tpl")
 
+@route("/nixxiomT")
+def nixxiomT():
+    return template("nixxiomT.tpl")
+
 @route("/youtube")
 def youtube():
     return template("youtube.tpl")
 
+@route("/nixxiom")
+def nixxiom():
+    return template("nixxiom.tpl")
+
+@route("/ummig")
+def ummig():
+    return template("ummig.tpl")
 
 #WoW Sölusíðu vörulisti
 vorulisti = [{"pid": 1, "name": "Amalgam of Destruction", "price": 15000},
