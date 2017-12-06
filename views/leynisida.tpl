@@ -18,61 +18,22 @@
       <br/>
 	  <h1 class:"san"> Sandra Dögg Kristmundsdóttir </h1>
     </header>
-    
-    <div id="slideshow_container">  
-	  <div class="slideshow">
-	    <ul class="slideshow">
-          <li class="show"><img width="940" height="250" src="public/san.jpg" alt="Sandra" /></li>
-          <li><img width="940" height="250" src="public/bebes.jpg" alt="Börnin" /></li>
-        </ul>  
-	  </div><!--close slideshow-->  	
-	</div><!--close slideshow_container-->
   <nav>
       <div id="wrap">
       <ul class="navbar">
-       <li><a href="index.html">Efnisyfirlit</a></li>
-       <li><a href="#"> Verkefni 1 </a>
-        <ul>
-           <li><a href="index1.html">Fyrri hluti</a></li>
-           <li><a href="dummy.html">Seinni hluti</a></li>
-        </ul>         
-       </li>
-       <li><a href="#">Verkefni 2</a>
-        <ul>
-           <li><a href="indexverk2.html" >Yfirlit á verkefni 2</a></li>
-           <li><a  href="Box_model.html">Verkefni 2.1-2.2</a></li>
-        <li><a href="Box_Modelp2.html">Verkefni 2.3</a></li>
-        <li><a href="positioning.html">Verkefni 2.4</a></li>
-        </ul>         
-       </li>
-       <li><a href="/wowsolusida">WoW Sölusíða</a>
-        <ul>
-           <li><a href="Indexverk3.html">Yfirlit á verkefni 3</a></li>
-        <li><a  href="Indexverk3-1-1SDK.html">Verkefni 3.1.1</a></li>
-        <li><a  href="verk3-1-2SDK.html">Verkefni 3.1.2</a></li>
-        <li><a  href="verk3-1-3SDK.html">Verkefni 3.1.3</a></li>
-        <li><a  href="verk3-1-4SDK.html">Verkefni 3.1.4</a></li>
-        <li><a  href="verk3-1-5SDK.html">Verkefni 3.1.5</a></li>
-        </ul>         
+        <li><a href="/wowsolusida">WoW Sölusíða</a>        
        </li>
        <li><a href="/twitch">Twitch</a>
-        <ul><li><a href="Indexverk3-2-1SDK.html">Verkefni 3.2.1</a></li>
+        <ul><li><a href="/nixxiomT">Nixxiom</a></li>
         <li><a href="Indexverk3-2sida2SDK.html">Verkefni 3.2.2</a></li>       
         <li><a href="Indexverk3-2sida3SDK.html">Verkefni 3.2.3</a></li>
         </ul>         
        </li>
        <li><a href="/youtube">Youtube</a>
-        <ul><li><a  href="index4.html">Yfirlit á verkefni 4</a></li>
-        <li><a  href="verk4-1SDK.html">Verkefni 4.1</a></li>
-        <li><a  href="verk4-2SDK.html">Verkefni 4.2</a></li>
-        <li><a  href="verk4-3SDK.html">Verkefni 4.3</a></li>
-        <li><a  href="verk4-4SDK.html">Verkefni 4.4</a></li>
+        <ul><li><a  href="/nixxiom">Nixxiom Myndband</a></li>
+        <li><a  href="Markiplier.tpl">Markiplier</a></li>
         </ul>         
-       </li>
-       <li><a href="#">Verkefni 5 </a>
-        <ul><li><a href="Indexverk5.html">Verkefni 5</a></li>
-        <li><a href="tafla.html">Náms-tafla</a></li>      
-        </ul>         
+       </li>        
        </li>
       </ul>
 </div><!--close menubar-->  
@@ -88,13 +49,7 @@
           <div class="sidebar_item">
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:300px;'><div id='gmap_canvas' style='height:200px;width:300px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://www.autohuren.world/locaties/amsterdam/">auto huren amsterdam</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(64.12652060000002, -21.81743929999994), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(64.12652060000002, -21.81743929999994) }); infowindow = new google.maps.InfoWindow({ content: '<strong>SDK</strong><br>Reykjavik<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 		  </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->
-		<div class="sidebar">
-          <div class="sidebar_item">
-            <h3>Jack Off Jill - When I am Queen</h3>
-                <audio controls src="mp3/When I Am Queen.mp3" />
-		  </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->  		
+        </div><!--close sidebar-->		
         <div class="sidebar">
           <div class="sidebar_item">
             <h2>Contact</h2>
@@ -140,7 +95,7 @@ Annars hef ég mjög gaman af borðspilum, teiknimyndasögum og bókum, þá sé
 	</div><!--close site_content-->  	
 
     <footer>
-    <a href="indexverk5.html">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="http://youtube.com/">Vídeó</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
+    <a href="/leynisida">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="http://youtube.com/">Vídeó</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
     </footer>
 	
   </div><!--close main-->
