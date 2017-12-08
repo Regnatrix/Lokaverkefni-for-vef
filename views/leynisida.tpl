@@ -61,13 +61,15 @@
 	  <div id="content">
         <div class="content_item">
 		  <h1>Um mig</h1> 
-          <p>Ég heiti Sandra, ég verð 24 ára núna 11. maí.
-          Ég er fædd og uppalin í Reykjavík.
-Ég er nýbyrjuð aftur í námi eftir að hafa hætt 2010, flutti svo til Noregs 2011 og er nýlega komin aftur heim.
-Ég á stelpur fæddar 2010 og 2012 og einn laumufarþegi á leiðinni. </p>
+          <p>Ég heiti Sandra Dögg og ég er 25 ára.
+          Ég er fædd og uppalin í Reykjavík, flutti svo til Noregs 2011 og er nýlega komin aftur heim.
+Ég er nýbyrjuð aftur í námi og er loksins búin að finna hvað það er sem ég vill læra.
+Ég á 2 stelpur fæddar í júní 2010 og nóvember 2012 og strák fæddann nóvember 2016. </p>
 <br/>
 <h1> Áhugamál </h1>
-<p>Ég hef mikinn áhuga á tölvum og tækni, gamalli og nýrri og hef alltaf verið sérstaklega hrifin af gömlum tölvuleikjum og tölvum en það er mun auðveldara að finna nýrri tölvur og leiki heldur en gömlu.
+<p>Ég hef mikinn áhuga á tölvum og tækni, gamalli og nýrri og hef alltaf verið sérstaklega hrifin af gömlum tölvuleikjum 
+og tölvum en það er mun auðveldara að finna nýrri tölvur og leiki heldur en gömlu.
+Og er að vinna í mínum eigin youtube og twitch gameplay síðum.
 Annars hef ég mjög gaman af borðspilum, teiknimyndasögum og bókum, þá sérstaklega spennu-ævintýra.
 </p>
 	  
