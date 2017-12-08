@@ -3,7 +3,7 @@
 
 <head>
   <title>SDK</title>
-  <meta name="description" content="Lokaverkefni SDK 2016" />
+  <meta name="description" content="Lokaverkefni SDK 2017" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
   <link rel="stylesheet" type="text/css" href="css/main.css" />
   <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
