@@ -25,8 +25,8 @@
        </li>
        <li><a href="/twitch">Twitch</a>
         <ul><li><a href="/nixxiomT">Nixxiom</a></li>
-        <li><a href="Indexverk3-2sida2SDK.html">Verkefni 3.2.2</a></li>       
-        <li><a href="Indexverk3-2sida3SDK.html">Verkefni 3.2.3</a></li>
+        <li><a href="/eslcsgo">ESL CSGO</a></li>       
+        <li><a href="/break">BreaK</a></li>
         </ul>         
        </li>
        <li><a href="/youtube">Youtube</a>
