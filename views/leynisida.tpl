@@ -1,38 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
+
 <head>
   <title>SDK</title>
   <meta name="description" content="Lokaverkefni SDK 2017" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
-  <script type="text/javascript" src={%"public/js/modernizr-1.5.min.js%}"></script>
-    <link rel="shortcut icon" href="public/images/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="public/images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-<form action="/innskraning" method="post">
-<body>
-  <div id="main">	
-    <header>
-	  <div id="strapline">
-      </div><!--close strapline-->	  
-      <br/>
-	  <h1 class:"san"> Sandra Dögg Kristmundsdóttir </h1>
-    </header>
   <nav>
       <div id="wrap">
       <ul class="navbar">
-        <li><a href="/wowsolusida">WoW Sölusíða</a>        
+       <li><a href="/heim">Heim</a></li>      
+       <li><a href="/wowsolusida">WoW Sölusíða</a>        
        </li>
-       <li><a href="/twitch">Twitch</a>
-        <ul><li><a href="/nixxiomT">Nixxiom</a></li>
-        <li><a href="Indexverk3-2sida2SDK.html">Verkefni 3.2.2</a></li>       
-        <li><a href="Indexverk3-2sida3SDK.html">Verkefni 3.2.3</a></li>
+       <li><a href="#">Twitch</a>
+        <ul>
+           <li><a href="/nixxiomT">Nixxiom</a></li>
+        <li><a  href="/eslcsgo">ESL CSGO</a></li>
+        <li><a  href="/break">BreaK</a></li>
         </ul>         
        </li>
-       <li><a href="/youtube">Youtube</a>
-        <ul><li><a  href="/nixxiom">Nixxiom Myndband</a></li>
-        <li><a  href="Markiplier.tpl">Markiplier</a></li>
-        </ul>         
+       <li><a href="#">Youtube </a>
+        <ul><li><a href="/nixxiom">Nixxiom Myndband</a></li>
+        <li><a href="/markiplier">Markiplier Myndband</a></li>       
+        <li><a href="/slightlyI">SlightlyImpressive Myndband</a></li>
+     </ul>         
        </li>        
        </li>
       </ul>
@@ -49,32 +46,18 @@
           <div class="sidebar_item">
             <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script><div style='overflow:hidden;height:200px;width:300px;'><div id='gmap_canvas' style='height:200px;width:300px;'></div><div><small><a href="http://embedgooglemaps.com">embed google maps</a></small></div><div><small><a href="http://www.autohuren.world/locaties/amsterdam/">auto huren amsterdam</a></small></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map() { var myOptions = { zoom: 10, center: new google.maps.LatLng(64.12652060000002, -21.81743929999994), mapTypeId: google.maps.MapTypeId.ROADMAP }; map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions); marker = new google.maps.Marker({ map: map, position: new google.maps.LatLng(64.12652060000002, -21.81743929999994) }); infowindow = new google.maps.InfoWindow({ content: '<strong>SDK</strong><br>Reykjavik<br>' }); google.maps.event.addListener(marker, 'click', function () { infowindow.open(map, marker); }); infowindow.open(map, marker); } google.maps.event.addDomListener(window, 'load', init_map);</script>
 		  </div><!--close sidebar_item--> 
-        </div><!--close sidebar-->		
+        </div><!--close sidebar-->
+		<div class="sidebar">
+          <div class="sidebar_item">
+            <h3>Jack Off Jill - When I am Queen</h3>
+                <audio controls src="static/When I Am Queen.mp3" />
+		  </div><!--close sidebar_item--> 
+        </div><!--close sidebar-->  		
         <div class="sidebar">
           <div class="sidebar_item">
-            <h2>Comment</h2>          
-
-{% block body %}
-  <h2>Messages</h2>
-  {% if messages %}
-    <ul>
-      {% for message in messages %}
-        <li>
-          <h5>{{ messages[message].who }}</h5> 
-          <p>{{ messages[message].body }}</p>
-        </li>
-      {% endfor %}
-    </ul>
-  {% else %}
-    No messages!
-  {% endif %}
-<form action="/submit_message" method="post">
-  <input type="text" placeholder="Name" name="who">
-  <textarea placeholder="Enter your message here" name="message" cols="50" rows="4"></textarea>
-  <input type="submit" value="Submit">]
-</form>
-</div>
-
+            <h2>Contact</h2>
+            <p>Simi: 1234 56789</p>
+            <p>Email: <a href="mailto:candiirainbow@hotmail.co.uk">My emailk</a></p>
           </div><!--close sidebar_item--> 
         </div><!--close sidebar-->
        </div><!--close sidebar_container-->	
@@ -105,27 +88,25 @@ Annars hef ég mjög gaman af borðspilum, teiknimyndasögum og bókum, þá sé
 		      <a href="https://www.google.no/search?q=looking+for+something+interesting&oq=looking+for+intresting+&aqs=chrome.5.69i57j0l5.14519j0j7&sourceid=chrome&ie=UTF-8" target="_blank">Leita</a>
 		    </div><!--close button_small-->		  
 		  </div><!--close content_container-->	
-		  <div class="content_container2">
-              <p>Tafla um námsyfirlitið mitt</p>
-        <div class="button_small">
-          <a href="tafla.html">Skoða</a>
-        </div><!--close button_small-->     
-      </div><!--close content_container-->  
+		    
 
 		</div><!--close content_item-->
       </div><!--close content-->   
 	</div><!--close site_content-->  	
 
     <footer>
-    <a href="/leynisida">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="https://www.instagram.com/regnatrixx/">Instagram</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
-    </footer>
+    <a href="/heim">Heim</a> | <a href="http://mp3.com/">Mp3</a> | <a href="https://www.instagram.com/regnatrixx/">Instagram</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
+</footer>
 	
   </div><!--close main-->
   
   <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="{% static '/public/js/jquery.min.js' %}"></script>
-  <script type="text/javascript" src="{% static '/public/js/image_slide.js' %}"></script>
- <style>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/image_slide.js"></script>
+  
+</body>
+</html>
+<style>
 @font-face { 
   font-family: News Cycle; 
     src: url('../fonts/NewsCycle-Regular.eot'); 
