@@ -21,6 +21,7 @@
   <nav>
       <div id="wrap">
       <ul class="navbar">
+      <li><a href="/heim">Heim</a> 
         <li><a href="/wowsolusida">WoW Sölusíða</a>        
        </li>
        <li><a href="/twitch">Twitch</a>
@@ -31,7 +32,8 @@
        </li>
        <li><a href="/youtube">Youtube</a>
         <ul><li><a  href="/nixxiom">Nixxiom Myndband</a></li>
-        <li><a  href="Markiplier.tpl">Markiplier</a></li>
+        <li><a  href="/markiplier">Markiplier Myndband</a></li>
+	<li><a  href="/slightlyI">SlightlyImpressive Myndband</a></li>
         </ul>         
        </li>        
        </li>
@@ -48,8 +50,8 @@
 		  
 
     <footer>
-    <a href="/leynisida">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="https://www.instagram.com/regnatrixx/">Instagram</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
-    </footer>
+    <a href="/heim">Heim</a> | <a href="http://mp3.com/">Mp3</a> | <a href="https://www.instagram.com/regnatrixx/">Instagram</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
+</footer>
 	
   </div><!--close main-->
   
