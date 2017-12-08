@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <!DOCTYPE html> 
 <html>
 
@@ -77,7 +79,7 @@ Annars hef ég mjög gaman af borðspilum, teiknimyndasögum og bókum, þá sé
 </p>
 	  
 		  <div class="content_container">
-		    <embed width="420" height="315" src="http://www.youtube.com/v/XGSy3_Czz8k">
+		    <embed width="420" height="315" src="https://www.youtube.com/embed/BoFgo1uTkxA">
 		  	<div class="button_small">
 		      <a href="http://youtube.com">Meira af youtube.</a>
 		    </div><!--close button_small-->
