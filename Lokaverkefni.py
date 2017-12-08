@@ -2,6 +2,7 @@
 #24.11.17
 import bottle
 from bottle import run,route,redirect,request,post,template,app,response,static_file,get
+from sys import argv
 import  pymysql.cursors
 from beaker.middleware import SessionMiddleware
 import pymysql
@@ -210,6 +211,5 @@ def static_skrar(skra):
     return static_file(skra, root='./public/')
 
 
-
-run()
+bottle.run ( app=app, host='0.0.0.0', port=argv[ 1 ], debug=True, reloader=True )
 
