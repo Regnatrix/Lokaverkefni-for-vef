@@ -52,9 +52,29 @@
         </div><!--close sidebar-->		
         <div class="sidebar">
           <div class="sidebar_item">
-            <h2>Contact</h2>
-            <p>Simi: 1234 56789</p>
-            <p>Email: <a href="mailto:candiirainbow@hotmail.co.uk">My emailk</a></p>
+            <h2>Comment</h2>          
+
+{% block body %}
+  <h2>Messages</h2>
+  {% if messages %}
+    <ul>
+      {% for message in messages %}
+        <li>
+          <h5>{{ messages[message].who }}</h5> 
+          <p>{{ messages[message].body }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    No messages!
+  {% endif %}
+<form action="/submit_message" method="post">
+  <input type="text" placeholder="Name" name="who">
+  <textarea placeholder="Enter your message here" name="message" cols="50" rows="4"></textarea>
+  <input type="submit" value="Submit">]
+</form>
+</div>
+
           </div><!--close sidebar_item--> 
         </div><!--close sidebar-->
        </div><!--close sidebar_container-->	
