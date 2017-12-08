@@ -1,7 +1,7 @@
 #Sandra Dögg Kristmundsdóttir
 #24.11.17
 import bottle
-from bottle import *
+from bottle import run,route,redirect,request,post,template,app,response,static_file,get
 import  pymysql.cursors
 from beaker.middleware import SessionMiddleware
 import pymysql
@@ -12,7 +12,7 @@ session_opts = {'session.type': 'file',
                 'session.data_dir': './data',
                 'session.auto': True}
 
-Lokaverkefni = SessionMiddleware(session_opts)
+app = SessionMiddleware(app(), session_opts)
 
 
 
@@ -73,6 +73,10 @@ def athuga():
     elif uttak == "Notandinn er ekki til":
         return template ( "buinnadskrainn.tpl", uttak=uttak )
 
+@route("/heim")
+def heim():
+    return template("heim.tpl")
+
 
 @route("/utskra")
 def utskraning():
@@ -87,6 +91,14 @@ def twitch():
 def nixxiomT():
     return template("nixxiomT.tpl")
 
+@route("/eslcsgo")
+def eslcsgo():
+    return template("eslcsgo.tpl")
+
+@route("/break")
+def braek():
+    return template("break.tpl")
+
 @route("/youtube")
 def youtube():
     return template("youtube.tpl")
@@ -95,9 +107,14 @@ def youtube():
 def nixxiom():
     return template("nixxiom.tpl")
 
-@route("/ummig")
-def ummig():
-    return template("ummig.tpl")
+@route("/markiplier")
+def markiplier():
+    return template("Markiplier.tpl")
+
+@route("/slightlyI")
+def slightlyI():
+    return template("slightlyI.tpl")
+
 
 #WoW Sölusíðu vörulisti
 vorulisti = [{"pid": 1, "name": "Amalgam of Destruction", "price": 15000},
@@ -119,73 +136,72 @@ def cart():
     session = bottle.request.environ.get('beaker.session')
     karfa = []
 
-    # lesum úr sessions þær vörur sem notandi hefur valið í körfu
     if session.get('1'):
-        Amalgam_of_Destruction = session.get('1')
-        karfa.append(Amalgam_of_Destruction)
+        vara1 = session.get('1')
+        karfa.append(vara1)
 
     if session.get('2'):
-        Elekk_Plushie = session.get('2')
-        karfa.append(Elekk_Plushie)
+        vara2 = session.get('2')
+        karfa.append(vara2)
 
     if session.get('3'):
-        Corrupted_Ashbringer = session.get('3')
-        karfa.append(Corrupted_Ashbringer)
+        vara3 = session.get('3')
+        karfa.append(vara3)
 
     if session.get('4'):
-        Ashbringer = session.get('4')
-        karfa.append(Ashbringer)
+        vara4 = session.get('4')
+        karfa.append(vara4)
 
     if session.get ('5'):
-        Astral_Cloud_Serpent = session.get ( '5' )
-        karfa.append (Astral_Cloud_Serpent)
+        vara5 = session.get ( '5' )
+        karfa.append (vara5)
 
     if session.get('6'):
-        Invincible = session.get('6')
-        karfa.append(Invincible)
+        vara6 = session.get('6')
+        karfa.append(vara6)
 
 
     return template("wowcart.tpl", karfa = karfa)
 
-#til að bæta vorum í cart
+
 @route("/cart/add/<id:int>")
 def add_to_cart(id):
     if id == 1:
-        session =  bottle.request.environ.get("beaker.sessions")
+        session =  request.environ.get("beaker.sessions")
         session["1"] = "Amalgam of Destruction"
         session.save()
-        return redirect("/wowcart")
+        return redirect("/cart")
     if id == 2:
-        session = bottle.request.environ.get("beaker.sessions")
+        session = request.environ.get("beaker.sessions")
         session[str(id)] = vorulisti[id - 1]["name"]
         session.save()
-        return redirect("/wowcart")
+        return redirect("/cart")
     if id == 3:
-        session = bottle.request.environ.get ("beaker.sessions")
+        session = request.environ.get ("beaker.sessions")
         session[str(id)] = vorulisti[id - 1]["name"]
         session.save()
-        return redirect ("/wowcart")
+        return redirect ("/cart")
     if id == 4:
-        session = bottle.request.environ.get ("beaker.sessions")
+        session = request.environ.get ("beaker.sessions")
         session[str(id)] = vorulisti[id - 1]["name"]
         session.save()
-        return redirect ("/wowcart")
+        return redirect ("/cart")
     if id == 5:
-        session = bottle.request.environ.get ("beaker.sessions")
+        session = request.environ.get ("beaker.sessions")
         session[str(id)] = vorulisti[id - 1]["name"]
         session.save()
-        return redirect ("/wowcart")
+        return redirect ("/cart")
     if id == 6:
-        session = bottle.request.environ.get ("beaker.sessions")
+        session = request.environ.get ("beaker.sessions")
         session[str(id)] = vorulisti[id - 1]["name"]
         session.save()
-        return redirect ("/wowcart")
+        return redirect ("/cart")
     else:
         return redirect("/wowsolusida")
 
 @route("/wowcart/remove")
 def remove_from_wowcart():
-    session = bottle.request.environ.get("beaker.session")
+    session = request.environ.get("beaker.session")
     session.delete()
     return redirect("/wowcart")
 
@@ -194,18 +210,6 @@ def static_skrar(skra):
     return static_file(skra, root='./public/')
 
 
-@get("/messages")
-def messages():
-  return template("list.html", messages=result)
-
-@route("/submit_message", methods=["POST"])
-def submit_message():
-  message = {
-    "body": request.form["message"],
-    "who": request.form["who"]
-  }
-  post("/messages", message)
-  return redirect(url_for("messages"))
 
 run()
 
