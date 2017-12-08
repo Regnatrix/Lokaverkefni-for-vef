@@ -117,7 +117,7 @@ Annars hef ég mjög gaman af borðspilum, teiknimyndasögum og bókum, þá sé
 	</div><!--close site_content-->  	
 
     <footer>
-    <a href="/leynisida">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="http://youtube.com/">Vídeó</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
+    <a href="/leynisida">Heim</a> | <a href="tafla.html">Náms Taflan</a> | <a href="http://mp3.com/">Mp3</a> | <a href="https://www.instagram.com/regnatrixx/">Instagram</a> | <a href="https://www.facebook.com/StrawberryRain92">Hafa samband</a><br/><br/>
     </footer>
 	
   </div><!--close main-->
